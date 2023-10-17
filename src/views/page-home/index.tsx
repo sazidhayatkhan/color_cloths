@@ -5,8 +5,19 @@ import React,{useState} from 'react'
 const HomeUi = () => {
     
   return (
+    // 
     <div>
-        <div className="min-h-screen" style={{
+        <div className="block md:hidden min-h-screen" style={{
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            // backgroundAttachment: 'fixed',
+            backgroundPosition: 'top center',
+            backgroundImage: 'url(https://www.aarong.com/media/mageplaza/bannerslider/banner/image/mobile_image/r/1/r1-puja-mb-23092023.png)'}}>
+        <div>
+          <CommonHeader/>
+        </div>
+        </div>
+        <div className="hidden md:block min-h-screen" style={{
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             // backgroundAttachment: 'fixed',
