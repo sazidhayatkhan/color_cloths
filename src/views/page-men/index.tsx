@@ -18,13 +18,69 @@ const MenUi = () => {
         <p className='flex justify-center items-center pt-28 text-white text-6xl uppercase'>Man's</p>
         </div>
         <div className='bg-white py-6'>
-            <SliderOne/>
+            <SliderOne data={manPageSliderData}/>
         </div>
         <div className='bg-white py-10'>
-            <Trending/>
+            <Trending data={manPageTrendingData}/>
         </div>
     </div>
   )
 }
 
 export default MenUi
+
+const manPageSliderData =[
+  {
+    image:'/images/men1.webp',
+    title:'Panjabi',
+    url:'',
+  },
+  {
+    image:'/images/men2.webp',
+    title:'Shirt',
+    url:'',
+  },
+  {
+    image:'/images/men3.webp',
+    title:'Tshirt',
+    url:'',
+  },
+  {
+    image:'/images/men4.webp',
+    title:'Shoes',
+    url:'',
+  },
+  {
+    image:'/images/men5.webp',
+    title:'Accessories',
+    url:'',
+  },
+]
+
+const manPageTrendingData =[
+  {
+    image:'/images/men1.webp',
+    title:'Panjabi',
+    url:'',
+  },
+  {
+    image:'/images/men2.webp',
+    title:'Shirt',
+    url:'',
+  },
+  {
+    image:'/images/men3.webp',
+    title:'Tshirt',
+    url:'',
+  },
+  {
+    image:'/images/men4.webp',
+    title:'Shoes',
+    url:'',
+  },
+  {
+    image:'/images/men5.webp',
+    title:'Accessories',
+    url:'',
+  },
+]

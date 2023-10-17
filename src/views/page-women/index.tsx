@@ -1,4 +1,6 @@
 import CommonHeader from '@/components/CommonHeader'
+import Trending from '@/components/Trending'
+import SliderOne from '@/components/sliderOne'
 import React from 'react'
 
 const WomenUi = () => {
@@ -15,14 +17,71 @@ const WomenUi = () => {
         </div>
           <p className='flex justify-center items-center pt-28 text-white text-6xl uppercase'>Woman's</p>
         </div>
-        <div className='bg-red-600 h-[400px] w-full'>
-            <p>Section1</p>
+        <div className='bg-white py-6'>
+            <SliderOne data={womanPageSliderData}/>
         </div>
-        <div className='bg-yellow-600 h-[400px] w-full'>
-            <p>Section2</p>
+        <div className='bg-white py-10'>
+            <Trending data={womanPageTrendingData}/>
         </div>
     </div>
   )
 }
 
 export default WomenUi
+
+const womanPageSliderData = [
+      {
+        image:'/images/wom1.webp',
+        title:'Silk',
+        url:'',
+      },
+      {
+        image:'/images/wom2.webp',
+        title:'Sharee',
+        url:'',
+      },
+      {
+        image:'/images/wom3.webp',
+        title:'Salwar Kameez',
+        url:'',
+      },
+      {
+        image:'/images/wom4.webp',
+        title:'Shawl',
+        url:'',
+      },
+      {
+        image:'/images/wom5.webp',
+        title:'Shoes',
+        url:'',
+      },
+    ]
+
+    const womanPageTrendingData = [
+      {
+        image:'/images/wom1.webp',
+        title:'Silk',
+        url:'',
+      },
+      {
+        image:'/images/wom2.webp',
+        title:'Sharee',
+        url:'',
+      },
+      {
+        image:'/images/wom3.webp',
+        title:'Salwar Kameez',
+        url:'',
+      },
+      {
+        image:'/images/wom4.webp',
+        title:'Shawl',
+        url:'',
+      },
+      {
+        image:'/images/wom5.webp',
+        title:'Shoes',
+        url:'',
+      },
+    ]
+

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import Slider from 'react-slick'
-const Trending = () => {
+const Trending = (props:any) => {
   return (
     <div>
         <div className='flex justify-center items-center'>
@@ -13,7 +13,7 @@ const Trending = () => {
             <div className='w-[75%] mx-auto'>
                     <Slider {...settings}>
                         {
-                            sliderData.map((item:any,i:any)=>(
+                            props?.data.map((item:any,i:any)=>(
                                 <div key={i} className=''>
                                     <Link href={''}>
                                         <div className='py-2'>
@@ -104,30 +104,3 @@ const settings = {
     );
   }
 
-const sliderData =[
-  {
-    image:'/images/men1.webp',
-    title:'Panjabi',
-    url:'',
-  },
-  {
-    image:'/images/men2.webp',
-    title:'Shirt',
-    url:'',
-  },
-  {
-    image:'/images/men3.webp',
-    title:'Tshirt',
-    url:'',
-  },
-  {
-    image:'/images/men4.webp',
-    title:'Shoes',
-    url:'',
-  },
-  {
-    image:'/images/men5.webp',
-    title:'Accessories',
-    url:'',
-  },
-]

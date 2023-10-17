@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 import Slider from 'react-slick'
-const SliderOne = () => {
+const SliderOne = (props:any) => {
   return (
     <div>
         <div className='grid grid-cols-5'>
@@ -14,7 +14,7 @@ const SliderOne = () => {
             <div className='col-span-4'>
                     <Slider {...settings}>
                         {
-                            sliderData.map((item:any,i:any)=>(
+                            props?.data?.map((item:any,i:any)=>(
                                 <div key={i} className=''>
                                     <Link href={''}>
                                         <div className='py-2 me-3'>

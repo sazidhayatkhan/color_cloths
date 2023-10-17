@@ -22,7 +22,7 @@ const Footer = () => {
         <div className='grid grid-cols-4'>
             {
                 footerImages?.map((item:any,i:any)=>(
-                    <div key={i}>
+                    <div key={i} className='relative'>
                         <Image 
                             src={item?.image || "/images/dummyImage.png"}
                             alt=""
@@ -30,12 +30,13 @@ const Footer = () => {
                             height={1000}
                             className="w-full h-[350px] object-cover"
                         />
+                        <p className='absolute top-[5%] left-[5%] text-white drop-shadow-2xl text-2xl uppercase font-bold'>{item?.title}</p>
                     </div>
                 ))
             }
         </div>
-        <div className='h-[600px]'>
-            <p>hi</p>
+        <div className='h-[60px] bg-red-600'>
+            <p>COLOR CLOTHS</p>
         </div>
     </div>
   )
@@ -45,15 +46,19 @@ export default Footer
 
 const footerImages = [
     {
-        image:"/images/f1.webp"
+        image:"/images/f1.png",
+        title:"Who we are"
     },
     {
-        image:"/images/f2.webp"
+        image:"/images/f2.png",
+        title:"Categories"
     },
     {
-        image:"/images/f3.webp"
+        image:"/images/f3.png",
+        title:"Customer Service"
     },
     {
-        image:"/images/f4.webp"
+        image:"/images/f4.png",
+        title:"More"
     }
 ]
