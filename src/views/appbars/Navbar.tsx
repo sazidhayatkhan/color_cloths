@@ -6,7 +6,7 @@ const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   return (
     <>
-    <div className='fixed bottom-0 w-full z-40'>
+    <div className='fixed bottom-0 w-full z-40 hidden md:block'>
         <div className='bg-white flex justify-between items-center text-lg px-8'>
             {
                 MenuItemsList.map((item:any,i:number)=>(

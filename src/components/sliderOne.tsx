@@ -7,15 +7,15 @@ import Slider from 'react-slick'
 const SliderOne = (props:any) => {
   return (
     <div>
-        <div className='grid grid-cols-5'>
-            <div className='col-span-1 flex justify-center items-center'>
-                <p className='text-4xl font-semibold w-[60%]'>SHOP BY CATEGORY</p>
+        <div className='grid grid-cols-1 md:grid-cols-5'>
+            <div className='col-span-12 md:col-span-1 flex justify-center items-center'>
+                <p className='text-center md:text-start text-xl md:text-4xl font-semibold w-full md:w-[60%] mb-4 md:mb-0'>SHOP BY CATEGORY</p>
             </div>
             <div className='col-span-4'>
                     <Slider {...settings}>
                         {
                             props?.data?.map((item:any,i:any)=>(
-                                <div key={i} className=''>
+                                <div key={i} className='ms-[78px] md:ms-0'>
                                     <Link href={''}>
                                         <div className='py-2 me-3'>
                                             <Image 
@@ -23,7 +23,7 @@ const SliderOne = (props:any) => {
                                             alt=""
                                             width={2000}
                                             height={2000}
-                                            className="w-full h-[460px] object-cover object-top"
+                                            className="w-full h-[320px] md:h-[460px] object-cover object-top"
                                             />
                                         </div>
                                         <p className='text-sm text-start font-semibold'>{item?.title}</p>
@@ -34,7 +34,6 @@ const SliderOne = (props:any) => {
                     </Slider>
             </div>
         </div>
-       
     </div>
   )
 }
@@ -73,7 +72,7 @@ const settings = {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1.2,
           dots: false,
           slidesToScroll: 1,
           initialSlide: 1,
@@ -82,7 +81,7 @@ const settings = {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1.2,
           dots: false,
           slidesToScroll: 1,
         },

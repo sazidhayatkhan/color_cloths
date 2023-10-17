@@ -15,12 +15,12 @@ const WomenUi = () => {
           <div>
           <CommonHeader/>
         </div>
-          <p className='flex justify-center items-center pt-28 text-white text-6xl uppercase'>Woman's</p>
+          <p className='flex justify-center items-center pt-52 md:pt-28 text-white text-4xl md:text-6xl uppercase'>Woman's</p>
         </div>
         <div className='bg-white py-6'>
             <SliderOne data={womanPageSliderData}/>
         </div>
-        <div className='bg-white py-10'>
+        <div className='bg-white py-2 md:py-10'>
             <Trending data={womanPageTrendingData}/>
         </div>
     </div>

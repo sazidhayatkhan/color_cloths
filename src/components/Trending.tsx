@@ -8,21 +8,21 @@ const Trending = (props:any) => {
   return (
     <div>
         <div className='flex justify-center items-center'>
-            <p className='text-3xl font-semibold mb-3'>TRENDING</p>
+            <p className='text-xl md:text-3xl font-semibold mb-3'>TRENDING</p>
         </div>
-            <div className='w-[75%] mx-auto'>
+            <div className='w-[92%] md:w-[75%] mx-auto'>
                     <Slider {...settings}>
                         {
                             props?.data.map((item:any,i:any)=>(
-                                <div key={i} className=''>
+                                <div key={i} className='ms-[64px] md:ms-0'>
                                     <Link href={''}>
-                                        <div className='py-2'>
+                                        <div className='py-2 me-3 md:me-0'>
                                             <Image 
                                             src={item?.image || "/images/dummyImage.png"}
                                             alt=""
                                             width={1000}
                                             height={1000}
-                                            className="w-full h-[460px] object-cover object-top"
+                                            className="w-full h-[320px] md:h-[460px] object-cover object-top"
                                             />
                                         </div>
                                     </Link>
@@ -69,7 +69,7 @@ const settings = {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1.2,
           dots: false,
           slidesToScroll: 1,
           initialSlide: 1,
@@ -78,7 +78,7 @@ const settings = {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1.2,
           dots: false,
           slidesToScroll: 1,
         },

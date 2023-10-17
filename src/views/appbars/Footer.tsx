@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {GoMail} from 'react-icons/go'
 const Footer = () => {
   return (
-    <div>
+    <div className='hidden md:block'>
         <div className='flex justify-between items-center bg-[#f3f3f3] px-12 py-7'>
             <div>
                 <div className='flex justify-start items-center gap-2 text-3xl mb-3'>
