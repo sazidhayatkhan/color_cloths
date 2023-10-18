@@ -70,10 +70,10 @@ body{
 .close-button:hover {
   background-color: #d83c72; /* Hover background color */
 }
-/* .slick-next{
- right:0px !important;
- display: none !important;
-} */
+.slick-next{
+  right:0px !important;
+  display: none !important;
+ }
 
 @media screen and(max-width:768px) {
   ._container{
@@ -82,5 +82,4 @@ body{
     padding-right: 4%;
     margin: auto;
   }
- 
 }

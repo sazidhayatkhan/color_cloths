@@ -1,6 +1,6 @@
-
+import CategorySlider from '@/components/CategorySlider'
 import CommonHeader from '@/components/CommonHeader'
-import React,{useState} from 'react'
+import React from 'react'
 
 const HomeUi = () => {
     
@@ -23,12 +23,12 @@ const HomeUi = () => {
             // backgroundAttachment: 'fixed',
             backgroundPosition: 'top center',
             backgroundImage: 'url(https://www.aarong.com/media/mageplaza/bannerslider/banner/image/1/-/1-d-puja-mb-08102023-revised.png)'}}>
-        <div>
-          <CommonHeader/>
+          <div>
+            <CommonHeader/>
+          </div>
         </div>
-        </div>
-        <div className='bg-red-600 h-[400px] w-full'>
-            <p>Section1</p>
+        <div className='block md:hidden py-6'>
+            <CategorySlider data={CategorySliderData}/>
         </div>
         <div className='bg-yellow-600 h-[400px] w-full'>
             <p>Section2</p>
@@ -39,3 +39,36 @@ const HomeUi = () => {
 }
 
 export default HomeUi
+
+const CategorySliderData =[
+  {
+    image:'/images/c1.webp',
+    title:'Woman',
+    url:'/women',
+  },
+  {
+    image:'/images/c2.webp',
+    title:'Man',
+    url:'/men',
+  },
+  {
+    image:'/images/c3.webp',
+    title:'Kids',
+    url:'',
+  },
+  {
+    image:'/images/c4.webp',
+    title:'Home Decor',
+    url:'',
+  },
+  {
+    image:'/images/c5.webp',
+    title:'Wedding',
+    url:'',
+  },
+  {
+    image:'/images/c6.webp',
+    title:'Jewellary',
+    url:'',
+  },
+]

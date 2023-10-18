@@ -17,7 +17,7 @@ const SliderOne = (props:any) => {
                             props?.data?.map((item:any,i:any)=>(
                                 <div key={i} className='ms-[78px] md:ms-0'>
                                     <Link href={''}>
-                                        <div className='py-2 me-3'>
+                                        <div className='border-2 me-3'>
                                             <Image 
                                             src={item?.image || "/images/dummyImage.png"}
                                             alt=""
@@ -26,7 +26,7 @@ const SliderOne = (props:any) => {
                                             className="w-full h-[320px] md:h-[460px] object-cover object-top"
                                             />
                                         </div>
-                                        <p className='text-sm text-start font-semibold'>{item?.title}</p>
+                                        <p className='text-sm text-start font-semibold mt-2'>{item?.title}</p>
                                     </Link>
                                 </div>
                             ))
