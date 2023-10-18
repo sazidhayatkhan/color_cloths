@@ -1,6 +1,7 @@
-import CategorySlider from '@/components/CategorySlider'
+import CategorySlider from '@/views/page-home/components/CategorySlider'
 import CommonHeader from '@/components/CommonHeader'
 import React from 'react'
+import SectionTwoSlider from './components/SectionTwoSlider'
 
 const HomeUi = () => {
     
@@ -30,8 +31,8 @@ const HomeUi = () => {
         <div className='block md:hidden py-6'>
             <CategorySlider data={CategorySliderData}/>
         </div>
-        <div className='bg-yellow-600 h-[400px] w-full'>
-            <p>Section2</p>
+        <div className=''>
+            <SectionTwoSlider data={SectionTwoData}/>
         </div>
 
     </div>
@@ -69,6 +70,27 @@ const CategorySliderData =[
   {
     image:'/images/c6.webp',
     title:'Jewellary',
+    url:'',
+  },
+]
+
+const SectionTwoData =[
+  {
+    image:'/images/sl1.webp',
+    mobileImage:'/images/msl1.webp',
+    title:'Woman',
+    url:'/women',
+  },
+  {
+    image:'/images/sl2.webp',
+    mobileImage:'/images/msl2.webp',
+    title:'Man',
+    url:'/men',
+  },
+  {
+    image:'/images/sl3.webp',
+    mobileImage:'/images/msl3.webp',
+    title:'Kids',
     url:'',
   },
 ]
