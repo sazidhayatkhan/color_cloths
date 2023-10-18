@@ -2,7 +2,13 @@
 import React,{useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 const Navbar = () => {
+  const pn = usePathname();
+
+  if (["/products"].includes(pn)) {
+    return null;
+  }
   const [hoveredItem, setHoveredItem] = useState(null);
   return (
     <>
@@ -349,15 +355,196 @@ const MenuItemsList=[
     },
     {
         title:"Wedding",
-        url:""
+        url:"",
+        products:[
+            {
+                subCategoryTitle:'Woman',
+                subCategoryLists:[
+                    {
+                        title:'Sharee',
+                        url:'',
+                    },
+                    {
+                        title:'Lehenga',
+                        url:'',
+                    }
+                    ,{
+                        title:'Purse & Batua',
+                        url:'',
+                    },
+                ]
+            },
+            {
+                subCategoryTitle:'Man',
+                subCategoryLists:[
+                    {
+                        title:'Panjabi Pajama Set',
+                        url:'',
+                    },
+                    {
+                        title:'Coaty',
+                        url:'',
+                    }
+                    ,{
+                        title:'Nagra',
+                        url:'',
+                    },
+                    {
+                        title:'Panjabi',
+                        url:'',
+                    },
+                    {
+                        title:'Kurti',
+                        url:'',
+                    },
+                ]
+            },
+            {
+                subCategoryTitle:'Jwellery',
+                subCategoryLists:[
+                    {
+                        title:'Silver',
+                        url:'',
+                    },
+                    {
+                        title:'Gold',
+                        url:'',
+                    }
+                    ,{
+                        title:'Pearl',
+                        url:'',
+                    },
+                ]
+            },
+        ],
+        featuredImage:"/images/wedding_section.webp"
+        
     },
     {
-        title:"Jewellary",
-        url:""
+        title:"Jewellery",
+        url:"",
+        products:[
+            {
+                subCategoryTitle:'Necklace',
+                subCategoryLists:[
+                    {
+                        title:'Gold',
+                        url:'',
+                    },
+                    {
+                        title:'Pearl',
+                        url:'',
+                    }
+                    ,{
+                        title:'Silver',
+                        url:'',
+                    },
+                ]
+            },
+            {
+                subCategoryTitle:'Earrings',
+                subCategoryLists:[
+                    {
+                        title:'Gold',
+                        url:'',
+                    },
+                    {
+                        title:'Silver',
+                        url:'',
+                    }
+                    ,{
+                        title:'Pearl',
+                        url:'',
+                    },
+                    {
+                        title:'Fashion',
+                        url:'',
+                    },
+                ]
+            },
+            {
+                subCategoryTitle:'Rings',
+                subCategoryLists:[
+                    {
+                        title:'Silver',
+                        url:'',
+                    },
+                    {
+                        title:'Gold',
+                        url:'',
+                    }
+                    ,{
+                        title:'Pearl',
+                        url:'',
+                    },
+                ]
+            },
+        ],
+        featuredImage:"/images/jewellery_section.jpg"
+        
     },
     {
-        title:"Gifts and Crafts",
-        url:""
+        title:"Gifts and Cards",
+        url:"",
+        products:[
+            {
+                subCategoryTitle:'GIft Cards',
+                subCategoryLists:[
+                    {
+                        title:'Gold',
+                        url:'',
+                    },
+                    {
+                        title:'Pearl',
+                        url:'',
+                    }
+                    ,{
+                        title:'Silver',
+                        url:'',
+                    },
+                ]
+            },
+            {
+                subCategoryTitle:'Cupons',
+                subCategoryLists:[
+                    {
+                        title:'Gold',
+                        url:'',
+                    },
+                    {
+                        title:'Silver',
+                        url:'',
+                    }
+                    ,{
+                        title:'Pearl',
+                        url:'',
+                    },
+                ]
+            },
+            {
+                subCategoryTitle:'Voucher',
+                subCategoryLists:[
+                    {
+                        title:'Silver',
+                        url:'',
+                    },
+                    {
+                        title:'Gold',
+                        url:'',
+                    }
+                    ,{
+                        title:'Pearl',
+                        url:'',
+                    },
+                    {
+                        title:'Fashion',
+                        url:'',
+                    },
+                ]
+            },
+        ],
+        featuredImage:"/images/gifts_section.webp"
+        
     },
     {
         title:"Beauty",
