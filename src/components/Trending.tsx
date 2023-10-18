@@ -1,10 +1,19 @@
 "use client"
-import React from 'react'
+import React,{useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
+import {AiFillPlusCircle} from 'react-icons/ai'
+import {GrClose} from 'react-icons/gr'
 import Slider from 'react-slick'
 const Trending = (props:any) => {
+  const [openDiv, setOpenDiv] = useState(new Array(props?.data.length).fill(false));
+
+  const toggleDiv = (index: number) => {
+    const updatedOpenDiv = [...openDiv];
+    updatedOpenDiv[index] = !updatedOpenDiv[index];
+    setOpenDiv(updatedOpenDiv);
+  };
   return (
     <div>
         <div className='flex justify-center items-center'>
@@ -15,8 +24,8 @@ const Trending = (props:any) => {
                         {
                             props?.data.map((item:any,i:any)=>(
                                 <div key={i} className='ms-[64px] md:ms-0'>
-                                    <Link href={''}>
-                                        <div className='me-3 md:me-0 border-2'>
+                                    <>
+                                        <div className='me-3 md:me-0 border-2 relative'>
                                             <Image 
                                             src={item?.image || "/images/dummyImage.png"}
                                             alt=""
@@ -24,8 +33,16 @@ const Trending = (props:any) => {
                                             height={1000}
                                             className="w-full h-[320px] md:h-[460px] object-cover object-top"
                                             />
+                                            <button onClick={()=>toggleDiv(i)} className='absolute bottom-[20px] left-[12px] text-4xl text-slate-700'><AiFillPlusCircle/></button>
+                                            <div className={`transition-transform transform scale-y-0 ${openDiv[i] ? 'scale-y-100' : ''} origin-bottom duration-300 ease-in-out`}>
+                                              <div className='bg-white drop-shadow-xl w-[90%] md:w-[85%] h-[100px] absolute bottom-[20px] left-[12px] rounded-bl-2xl p-3'>
+                                                <p className='text-black font-bold text-lg'>{item?.title}</p>
+                                                <p className='text-black mb-2'>{item?.price || 'TBA'}</p>
+                                                <button onClick={() => toggleDiv(i)} className='text-black text-xl'><GrClose /></button>
+                                              </div>
+                                            </div>
                                         </div>
-                                    </Link>
+                                    </>
                                 </div>
                             ))
                         }
