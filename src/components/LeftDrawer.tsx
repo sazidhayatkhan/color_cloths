@@ -25,7 +25,7 @@ const LeftDrawer: React.FC<LeftDrawerProps> = ({ isOpen, onClose, children }) =>
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-end mt-[44px] transition-transform duration-300 ${
+      className={`fixed inset-0 z-50 flex items-start justify-start transition-transform duration-300 ${
         isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
       }`}
       onClick={onClose}
@@ -35,7 +35,7 @@ const LeftDrawer: React.FC<LeftDrawerProps> = ({ isOpen, onClose, children }) =>
         style={{ zIndex: -1 }}
       ></div> */}
       <div
-        className="w-full h-full bg-white border-black border-t-2"
+        className="w-[88%] bg-white border-black border-t-2 overflow-hidden overflow-y-auto h-[100vh]"
         onClick={handleClickInside}
       >
         {children}
