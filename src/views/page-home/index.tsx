@@ -2,6 +2,7 @@ import CategorySlider from '@/views/page-home/components/CategorySlider'
 import CommonHeader from '@/components/CommonHeader'
 import React from 'react'
 import SectionTwoSlider from './components/SectionTwoSlider'
+import NewProductsSlider from './components/NewProductsSlider'
 
 const HomeUi = () => {
     
@@ -33,6 +34,9 @@ const HomeUi = () => {
         </div>
         <div className=''>
             <SectionTwoSlider data={SectionTwoData}/>
+        </div>
+        <div className='py-6'>
+          <NewProductsSlider data={NewProductsData}/>
         </div>
 
     </div>
@@ -93,4 +97,53 @@ const SectionTwoData =[
     title:'Kids',
     url:'',
   },
+]
+
+const NewProductsData =[
+  {
+    image:'/images/men1.webp',
+    title:'Panjabi',
+    url:'',
+  },
+  {
+    image:'/images/wom2.webp',
+    title:'Sharee',
+    url:'',
+  },
+  {
+    image:'/images/men2.webp',
+    title:'Shirt',
+    url:'',
+  },
+  {
+    image:'/images/wom3.webp',
+    title:'Salwar Kameez',
+    url:'',
+  },
+  {
+    image:'/images/men3.webp',
+    title:'Tshirt',
+    url:'',
+  },
+  {
+    image:'/images/wom1.webp',
+    title:'Silk',
+    url:'',
+  },
+  {
+    image:'/images/men4.webp',
+    title:'Shoes',
+    url:'',
+  },
+  {
+    image:'/images/men5.webp',
+    title:'Accessories',
+    url:'',
+  },
+  {
+    image:'/images/wom4.webp',
+    title:'Shawl',
+    url:'',
+  },
+  
 ]
