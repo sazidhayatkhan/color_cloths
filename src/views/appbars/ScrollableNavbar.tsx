@@ -70,9 +70,11 @@ const ScrollableNavbar = () => {
                 <ul className="hidden md:flex space-x-4">
                         {
                             MenuData.map((item:any,i:any)=>(
-                                <li key={i} className='uppercase cursor-pointer'>
-                                    {item?.title}
-                                </li>
+                                <Link href={item?.url}>
+                                    <li key={i} className='uppercase cursor-pointer'>
+                                        {item?.title}
+                                    </li>
+                                </Link>
                             ))
                         }
                 </ul>

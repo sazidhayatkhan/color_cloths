@@ -15,7 +15,7 @@ const NewProductsSlider = (props:any) => {
                         {
                             props?.data.map((item:any,i:any)=>(
                                 <div key={i} className='ms-[64px] md:ms-0'>
-                                    <Link href={''}>
+                                    <Link href={'/products'}>
                                         <div className='me-3 md:me-0 border-2'>
                                             <Image 
                                             src={item?.image || "/images/dummyImage.png"}
