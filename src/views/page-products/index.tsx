@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import ProductsNavbar from '@/views/appbars/ProductsNavbar'
 import ScrollableNavbar from '@/views/appbars/ScrollableNavbar'
+import ProductList from './components/ProductList'
 
 const ProductsUi = () => {
   return (
@@ -19,27 +20,7 @@ const ProductsUi = () => {
           <p>I AM FILTER</p>
         </div>
         <div className='col-span-12 md:col-span-9'>
-          <div className='grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-7 mx-2 md:mx-0'>
-          {
-            [...Array(20)].map((i:any)=>(
-              <div key={i} className=''>
-                <div>
-                  <Image 
-                    src="/images/wom3.webp"
-                    alt=""
-                    width={1000}
-                    height={1000}
-                    className="w-full h-[270px] md:h-[400px] object-cover object-top border"
-                  />
-                </div>
-                <div className='mt-1'>
-                  <p className='text-base md:text-lg font-semibold'>Muslin Kurti</p>
-                  <p className='text-sm md:text-base font-medium'>Tk 2000.00</p>
-                </div>
-              </div>
-            ))
-          }
-          </div>
+          <ProductList data={ProductsData}/>
         </div>
       </div>
     </div>
@@ -47,3 +28,56 @@ const ProductsUi = () => {
 }
 
 export default ProductsUi
+
+const ProductsData =[
+  {
+    image:'/images/men1.webp',
+    title:'Panjabi',
+    url:'',
+  },
+  {
+    image:'/images/men2.webp',
+    title:'Shirt',
+    url:'',
+  },
+  {
+    image:'/images/men3.webp',
+    title:'Tshirt',
+    url:'',
+  },
+  {
+    image:'/images/men4.webp',
+    title:'Shoes',
+    url:'',
+  },
+  {
+    image:'/images/men5.webp',
+    title:'Accessories',
+    url:'',
+  },
+  {
+    image:'/images/wom1.webp',
+    title:'Silk',
+    url:'',
+  },
+  {
+    image:'/images/wom2.webp',
+    title:'Sharee',
+    url:'',
+  },
+  {
+    image:'/images/wom3.webp',
+    title:'Salwar Kameez',
+    url:'',
+  },
+  {
+    image:'/images/wom4.webp',
+    title:'Shawl',
+    url:'',
+  },
+  {
+    image:'/images/wom5.webp',
+    title:'Shoes',
+    url:'',
+  },
+]
