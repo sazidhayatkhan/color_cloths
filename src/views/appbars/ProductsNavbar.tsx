@@ -6,7 +6,7 @@ import {FiSearch} from 'react-icons/fi'
 import {AiOutlineUser,AiOutlineHeart} from 'react-icons/ai'
 import {IoBagOutline} from 'react-icons/io5'
 import {GiHamburgerMenu} from 'react-icons/gi'
-import LeftDrawer from './LeftDrawer'
+import LeftDrawer from '../../components/LeftDrawer'
 const ProductsNavbar = () => {
   const [isLeftDrawerOpen, setIsLeftDrawerOpen] = useState(false);
   const closeLeftDrawer = () => {

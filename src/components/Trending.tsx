@@ -26,6 +26,7 @@ const Trending = (props:any) => {
                                 <div key={i} className='ms-[64px] md:ms-0'>
                                     <>
                                         <div className='me-3 md:me-0 border-2 relative'>
+                                          <Link href={"/products"}>
                                             <Image 
                                             src={item?.image || "/images/dummyImage.png"}
                                             alt=""
@@ -33,6 +34,7 @@ const Trending = (props:any) => {
                                             height={1000}
                                             className="w-full h-[320px] md:h-[460px] object-cover object-top"
                                             />
+                                            </Link>
                                             <button onClick={()=>toggleDiv(i)} className='absolute bottom-[20px] left-[12px] text-4xl text-slate-700'><AiFillPlusCircle/></button>
                                             <div className={`transition-transform transform scale-y-0 ${openDiv[i] ? 'scale-y-100' : ''} origin-bottom duration-300 ease-in-out`}>
                                               <div className='bg-white drop-shadow-xl w-[90%] md:w-[85%] h-[100px] absolute bottom-[20px] left-[12px] rounded-bl-2xl p-3'>

@@ -7,7 +7,7 @@ import {IoBagOutline} from 'react-icons/io5'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import Link from "next/link";
 import Image from "next/image"
-import LeftDrawer from "./LeftDrawer";
+import LeftDrawer from "../../components/LeftDrawer";
 
 const ScrollableNavbar = () => {
     

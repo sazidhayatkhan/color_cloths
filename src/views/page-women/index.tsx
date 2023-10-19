@@ -1,4 +1,4 @@
-import CommonHeader from '@/components/CommonHeader'
+import CommonHeader from '@/views/appbars/CommonHeader'
 import Trending from '@/components/Trending'
 import SliderOne from '@/components/sliderOne'
 import React from 'react'

@@ -1,5 +1,5 @@
 import CategorySlider from '@/views/page-home/components/CategorySlider'
-import CommonHeader from '@/components/CommonHeader'
+import CommonHeader from '@/views/appbars/CommonHeader'
 import React from 'react'
 import SectionTwoSlider from './components/SectionTwoSlider'
 import NewProductsSlider from './components/NewProductsSlider'

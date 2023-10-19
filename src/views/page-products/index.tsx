@@ -1,5 +1,5 @@
-import ProductsNavbar from '@/components/ProductsNavbar'
-import ScrollableNavbar from '@/components/ScrollableNavbar'
+import ProductsNavbar from '@/views/appbars/ProductsNavbar'
+import ScrollableNavbar from '@/views/appbars/ScrollableNavbar'
 import React from 'react'
 
 const ProductsUi = () => {
