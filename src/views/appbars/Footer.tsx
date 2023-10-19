@@ -65,9 +65,9 @@ const Footer = () => {
             </div>
         </div>
         
-        <div className='h-[60px] bg-red-600 hidden md:block'>
+        {/* <div className='h-[60px] bg-white text-white hidden md:block'>
             <p>COLOR CLOTHS</p>
-        </div>
+        </div> */}
     </div>
   )
 }
