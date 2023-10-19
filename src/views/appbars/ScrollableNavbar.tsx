@@ -79,7 +79,7 @@ const ScrollableNavbar = () => {
                         }
                 </ul>
             </div>
-            <ul className="flex space-x-4 text-2xl">
+            <ul className="flex space-x-4 text-xl md:text-2xl">
                 <li>
                     <FiSearch/>
                 </li>
