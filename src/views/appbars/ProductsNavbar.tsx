@@ -127,26 +127,26 @@ const MenuData = [
     },
     {
         title:"Wedding",
-        url:""
+        url:"/wedding"
     },
     {
         title:"Jewellary",
-        url:""
+        url:"/jewellary"
     },
     {
         title:"Gifts and Crafts",
-        url:""
+        url:"/gifts-crafts"
     },
     {
         title:"Beauty",
-        url:""
+        url:"/beauty"
     },
     {
         title:"Brands",
-        url:""
+        url:"/brands"
     },
     {
         title:"Puja 23",
-        url:""
+        url:"/puja"
     },
 ]

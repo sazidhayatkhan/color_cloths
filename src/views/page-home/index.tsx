@@ -59,22 +59,22 @@ const CategorySliderData =[
   {
     image:'/images/c3.webp',
     title:'Kids',
-    url:'',
+    url:'/kid',
   },
   {
     image:'/images/c4.webp',
     title:'Home Decor',
-    url:'',
+    url:'/home-decor',
   },
   {
     image:'/images/c5.webp',
     title:'Wedding',
-    url:'',
+    url:'/wedding',
   },
   {
     image:'/images/c6.webp',
     title:'Jewellary',
-    url:'',
+    url:'/jewellary',
   },
 ]
 
@@ -95,7 +95,7 @@ const SectionTwoData =[
     image:'/images/sl3.webp',
     mobileImage:'/images/msl3.webp',
     title:'Kids',
-    url:'',
+    url:'/kid',
   },
 ]
 

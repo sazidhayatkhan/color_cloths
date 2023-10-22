@@ -355,7 +355,7 @@ const MenuItemsList=[
     },
     {
         title:"Wedding",
-        url:"",
+        url:"/wedding",
         products:[
             {
                 subCategoryTitle:'Woman',
@@ -422,7 +422,7 @@ const MenuItemsList=[
     },
     {
         title:"Jewellery",
-        url:"",
+        url:"/jewellery",
         products:[
             {
                 subCategoryTitle:'Necklace',
@@ -485,7 +485,7 @@ const MenuItemsList=[
     },
     {
         title:"Gifts and Cards",
-        url:"",
+        url:"/gifts-crafts",
         products:[
             {
                 subCategoryTitle:'GIft Cards',
@@ -548,14 +548,14 @@ const MenuItemsList=[
     },
     {
         title:"Beauty",
-        url:""
+        url:"/beauty"
     },
     {
         title:"Brands",
-        url:""
+        url:"/brands"
     },
     {
         title:"Puja 23",
-        url:""
+        url:"/puja"
     },
 ]
