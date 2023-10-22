@@ -105,11 +105,11 @@ const MenuData = [
     },
     {
         title:"Kids",
-        url:""
+        url:"/kid"
     },
     {
         title:"HOME DÉCOR",
-        url:""
+        url:"/home-decor"
     },
     {
         title:"Wedding",

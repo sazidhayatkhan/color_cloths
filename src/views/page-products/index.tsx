@@ -16,10 +16,10 @@ const ProductsUi = () => {
         <ScrollableNavbar/>
       </div>
       <div className='_container grid grid-cols-12 gap-4'>
-        <div className='bg-pink-300 hidden md:block col-span-3'>
-          <p>I AM FILTER</p>
+        <div className='hidden md:block col-span-3'>
+          <p className=''>I AM FILTER</p>
         </div>
-        <div className='col-span-12 md:col-span-9'>
+        <div className='col-span-12 md:col-span-9 mb-20'>
           <ProductList data={ProductsData}/>
         </div>
       </div>

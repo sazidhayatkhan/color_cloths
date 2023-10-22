@@ -213,7 +213,7 @@ const MenuItemsList=[
     },
     {
         title:"Kids",
-        url:"",
+        url:"/kid",
         products:[
             {
                 subCategoryTitle:'Boys (8Y-10Y)',
@@ -280,7 +280,7 @@ const MenuItemsList=[
     },
     {
         title:"HOME DÉCOR",
-        url:"",
+        url:"/home-decor",
         products:[
             {
                 subCategoryTitle:'Living',

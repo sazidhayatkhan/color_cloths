@@ -39,11 +39,11 @@ const ProductsNavbar = () => {
                 </div>
             </div>
             <div className='flex justify-between items-center'>
-                <div className='hidden md:flex justify-start items-center gap-6'>
+                <div className='hidden md:flex justify-start items-center'>
                     {
                         MenuData.map((item:any,i:any)=>(
                             <div key={i}>
-                                <button className='uppercase text-lg'>{item?.title}</button>
+                                <button className='uppercase text-lg px-3'>{item?.title}</button>
                             </div>
                         ))
                     }
@@ -57,6 +57,7 @@ const ProductsNavbar = () => {
                 </div>
             </div>
         </div>
+        
     </div> 
     <LeftDrawer isOpen={isLeftDrawerOpen} onClose={closeLeftDrawer}>
     <div>
@@ -118,11 +119,11 @@ const MenuData = [
     },
     {
         title:"Kids",
-        url:""
+        url:"/kid"
     },
     {
         title:"HOME DÉCOR",
-        url:""
+        url:"/home-decor"
     },
     {
         title:"Wedding",
