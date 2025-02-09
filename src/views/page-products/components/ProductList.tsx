@@ -19,7 +19,7 @@ const ProductList = ({data}:any) => {
                 </div>
                 <div className='mt-1'>
                     <p className='text-sm md:text-lg font-semibold'>{item?.title}</p>
-                    <p className='text-xs md:text-base font-medium'>Tk 2000.00</p>
+                    <p className='text-xs md:text-base font-medium'>Tk {item?.price}</p>
                 </div>
               </div>
             ))
